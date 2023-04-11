@@ -1,0 +1,21 @@
+.titlemargin{
+    margin-top: 300px;
+}
+body{
+    background-color: #ECF2FF !important; 
+}
+.titlefont{
+    font-family: 'Sacramento', cursive;
+    font-size: 6.4rem !important;
+}
+@media (max-width:767px){
+    .titlefont{
+        font-family: 'Sacramento', cursive;
+        font-size: 2.8rem !important;
+    }
+}
+.titlephoto{
+    margin: 30px;
+    width:10%;
+    height:10%;
+}
