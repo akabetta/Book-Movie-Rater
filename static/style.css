@@ -1,5 +1,9 @@
 .titlemargin{
-    margin-top: 300px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+.bookbutton{
+    margin:40px;
 }
 body{
     background-color: #ECF2FF !important; 

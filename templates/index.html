@@ -16,5 +16,14 @@
             <h1 class="display-3 titlefont"><img class="titlephoto" src="../static/clapperboard.png" alt="clapperboard-png">  Movies & Books <img class="titlephoto" src="../static/magicbook.png" alt="book-png"></h1>
         </div>  
     </div>
+    <div class="text-center">
+        <a class="btn btn-secondary bookbutton" style=" --bs-btn-padding-y: 1rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.6rem;"
+        href="{{ url_for('movies') }}" role="button">Movies</a>
+        <a class="btn btn-outline-secondary bookbutton" style=" --bs-btn-padding-y: 1rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.6rem;"
+        href="{{ url_for('books') }}" role="button">Books</a>
+    </a>  
+    </div>
+
+    
 </body>
 </html>
