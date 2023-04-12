@@ -48,7 +48,7 @@ def books():
         list_of_rows=[]
         for row in csv_data:
             list_of_rows.append(row)
-    return render_template('books.html')
+    return render_template('books.html',books=list_of_rows)
 
 
 
@@ -72,7 +72,7 @@ def movies():
         list_of_rows=[]
         for row in csv_data:
             list_of_rows.append(row)
-    return render_template('movies.html')
+    return render_template('movies.html',movies=list_of_rows)
 
 if __name__=='__main__':
     app.run(debug=True)
