@@ -5,8 +5,11 @@
 .bookbutton{
     margin:40px;
 }
-body{
+.index-page{
     background-color: #ECF2FF !important; 
+}
+.list-page{
+    background-color: #B7B7B7 !important;
 }
 .titlefont{
     font-family: 'Sacramento', cursive;

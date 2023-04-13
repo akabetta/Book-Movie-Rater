@@ -6,7 +6,7 @@ from flask_bootstrap import Bootstrap
 import csv
 class MovieForm(FlaskForm):
     movie=StringField('Movie Name', validators=[DataRequired()])
-    imdblink=StringField('IMDB Link', validators=[DataRequired(), URL()])
+    movielink=StringField('IMDB Link', validators=[DataRequired(), URL()])
     storyrate=SelectField('Story', validators=[DataRequired()], choices=["📜","📜📜","📜📜📜","📜📜📜📜","📜📜📜📜📜"])
     cinematography=SelectField('Cinematography', validators=[DataRequired()], choices=["📽️","📽️📽️","📽️📽️📽️","📽️📽️📽️📽️","📽️📽️📽️📽️📽️"])
     characters=SelectField('Characters', validators=[DataRequired()], choices=["👻","👻👻","👻👻👻","👻👻👻👻","👻👻👻👻👻"])
@@ -58,7 +58,7 @@ def addformovie():
     if movieform.validate_on_submit():
         with open("movie-data.csv", mode='a', encoding='UTF-8') as csv_file:
             csv_file.write(f"\n{movieform.movie.data},"
-                           f"{movieform.imdblink.data},"
+                           f"{movieform.movielink.data},"
                            f"{movieform.storyrate.data},"
                            f"{movieform.cinematography.data},"
                            f"{movieform.characters.data},"
