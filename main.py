@@ -22,7 +22,7 @@ class BookForm(FlaskForm):
     submit=SubmitField('Submit')
 
 app=Flask(__name__)
-# app.config['SECRET_KEY']="your secret key"
+# app.config['SECRET_KEY']="your secret key" #Required to encrypt our Flask app
 bootstrap=Bootstrap(app)
 @app.route('/')
 def index():
